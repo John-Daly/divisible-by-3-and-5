@@ -2,8 +2,14 @@ public class Main {
 
     public static void main(String[] args) {
 
+    // Set a count and sum parameter to 0. We'll add to them during the loop. 
+
         int count = 0;
         int sum = 0;
+
+    // Called isDivisible method created below. If number is divisible it will be printed. Otherwise, it will not be printted.
+    // Numbers are counted in order to break out of the loop at 5. 
+    // Values are added to the sum parameter. Sum parameter is then called outside the loop. 
 
         for(int i = 1; i < 1001; i++){
             if (isDivisible(i)){
@@ -18,6 +24,9 @@ public class Main {
         }
         System.out.println(sum);
     }
+    
+    // Created a method to check if a given number was divisible by both 3 and 5. 
+    
     public static boolean isDivisible(int number){
         return (number % 3 == 0) && (number % 5 == 0);
     }
